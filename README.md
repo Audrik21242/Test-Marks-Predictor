@@ -15,24 +15,22 @@ This project builds a model to predict students' marks based on various features
 The aim of this project is to predict student marks based on specific features. Through data exploration, we observed that the features for math, reading, and writing scores have significant dependencies on each other but minimal correlation with other features. Consequently, we focused on these three features for training our model.
 
 # Libraries and Dependencies
-The project uses the following libraries:<b/>
-<b/>
-NumPy and Pandas: For data preprocessing and manipulation.<b/>
-Seaborn: For visualizing feature relationships.<b/>
-Scikit-Learn (sklearn): For model selection, building, and evaluation.<b/>
+The project uses the following libraries:
+ * NumPy and Pandas: For data preprocessing and manipulation.<b/>
+ * Seaborn: For visualizing feature relationships.<b/>
+ * Scikit-Learn (sklearn): For model selection, building, and evaluation.<b/>
 
 
 # Data Preprocessing
 Data Splitting: The dataset is divided into training and testing sets.<b/>
 Feature Selection: After analyzing feature dependencies, the math, reading, and writing scores were selected as primary predictors due to their interdependence.<b/>
 * Preprocessing Techniques:
-  - Label Encoding: Applied to categorical variables.
-  - Feature Scaling: Used to standardize the dataset for consistent model performance.
+   - Label Encoding: Applied to categorical variables.
+   - Feature Scaling: Used to standardize the dataset for consistent model performance.
 
 
 # Model Selection and Training
-A variety of regression models were tested to predict math, reading, and writing scores:
-<b/>
+A variety of regression models were tested to predict math, reading, and writing scores:<br/>
 * Linear Regression
 * Support Vector Regressor (SVR)
 * Decision Tree Regressor
@@ -41,9 +39,8 @@ A variety of regression models were tested to predict math, reading, and writing
 
 # Evaluation Metrics
 The models were evaluated using:
-R² Score: Measures the proportion of variance explained by the model.<b/>
-Model Score: An additional metric to assess the accuracy of predictions.<b/>
-<b/>
+ * R² Score: Measures the proportion of variance explained by the model.
+ * Model Score: An additional metric to assess the accuracy of predictions.
 
 # Results
 The best and worst-performing models for each score prediction are as follows:

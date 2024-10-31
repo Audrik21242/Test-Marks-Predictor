@@ -1,4 +1,4 @@
-# Student Marks Prediction
+# Test Marks Prediction
 This project builds a model to predict students' marks based on various features, using machine learning techniques to analyze relationships and dependencies among scores.
 
 # Table of Contents

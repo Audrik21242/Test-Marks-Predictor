@@ -1,13 +1,78 @@
-in this project, we build a model that predict the marks of the students based on various features
-The model will be built using numpy and pandas for preprocessing, seaborn for visualization and sklearn for model selection building
-IN this project we have selected to divide our dataset into training and testing data.
-Additionally, on plotting the relationships among the features, we obseerved that features math, reading and writing scores were dependent on each other whereas they were not really affected by other features
-Therefore, hese three features were extracted and the model was trained on them.
-The preprocessing involved the above mentioned steps to find relationships among the features as well as label encoding and scaling the columns
-In our project we make the prediction on the reading, writing and math scores and for that, we use a variety of models. These are Linear regression, SVR, decision tree regressor and random forest regressor
-For evaluation we check the r2 score as well as calculate the model score
-The best result for math marks prediction was with linear regression with an r2 score of 0.554 and a model score of 0.706 followed by RFR with 0.506 r2 and 0.60 model score
-for reading marks the best was with linear regression with r2 score being 0.917 and moedl score being 0.90 followed by rfr with r2 0.859 and model score being .899
-for writing the best was with linear r2 score :  0.9023478894078029 and model score :  0.9141278133486234 followed by rfr r2 score :  0.8819148296910767 model score :  0.8943864854094494
+# Student Marks Prediction
+This project builds a model to predict students' marks based on various features, using machine learning techniques to analyze relationships and dependencies among scores.
 
-The worst performing model for each prediction was SVR
+# Table of Contents
+1. Project Overview
+2. Libraries and Dependencies
+3. Data Preprocessing
+4. Model Selection and Training
+5. Evaluation Metrics
+6. Results
+7. Conclusion
+
+
+# Project Overview
+The aim of this project is to predict student marks based on specific features. Through data exploration, we observed that the features for math, reading, and writing scores have significant dependencies on each other but minimal correlation with other features. Consequently, we focused on these three features for training our model.
+
+# Libraries and Dependencies
+The project uses the following libraries:<b/>
+<b/>
+NumPy and Pandas: For data preprocessing and manipulation.<b/>
+Seaborn: For visualizing feature relationships.<b/>
+Scikit-Learn (sklearn): For model selection, building, and evaluation.<b/>
+
+
+# Data Preprocessing
+Data Splitting: The dataset is divided into training and testing sets.<b/>
+Feature Selection: After analyzing feature dependencies, the math, reading, and writing scores were selected as primary predictors due to their interdependence.<b/>
+* Preprocessing Techniques:
+  - Label Encoding: Applied to categorical variables.
+  - Feature Scaling: Used to standardize the dataset for consistent model performance.
+
+
+# Model Selection and Training
+A variety of regression models were tested to predict math, reading, and writing scores:
+<b/>
+* Linear Regression
+* Support Vector Regressor (SVR)
+* Decision Tree Regressor
+* Random Forest Regressor
+
+
+# Evaluation Metrics
+The models were evaluated using:
+R² Score: Measures the proportion of variance explained by the model.<b/>
+Model Score: An additional metric to assess the accuracy of predictions.<b/>
+<b/>
+
+# Results
+The best and worst-performing models for each score prediction are as follows:
+
+1. Math Marks Prediction
+ - Best Model: Linear Regression
+   - R² Score: 0.554
+   - Model Score: 0.706
+ - Second Best: Random Forest Regressor (RFR)
+   - R² Score: 0.50
+   - Model Score: 0.60
+
+2. Reading Marks Prediction
+- Best Model: Linear Regression
+  - R² Score: 0.917
+  - Model Score: 0.90
+- Second Best: Random Forest Regressor (RFR)
+  - R² Score: 0.859
+  - Model Score: 0.899
+
+3. Writing Marks Prediction
+- Best Model: Linear Regression
+  - R² Score: 0.902
+  - Model Score: 0.914
+- Second Best: Random Forest Regressor (RFR)
+  - R² Score: 0.882
+  - Model Score: 0.894
+
+* Worst Performing Model (Across All Scores): Support Vector Regressor (SVR)
+
+# Conclusion
+Linear Regression emerged as the most effective model for predicting student marks in math, reading, and writing. The Random Forest Regressor provided competitive performance, but SVR was consistently the least effective across all predictions.
